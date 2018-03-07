@@ -1,0 +1,31 @@
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.11",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.2",
+    "sequelize": "^4.35.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "Cache-ual-Corner",
+  "description": "Cache-ual-Corner is a chat room app where users communicate with one another through text-based messages.",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priyaA01/Cache-ual-Corner.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/priyaA01/Cache-ual-Corner/issues"
+  },
+  "homepage": "https://github.com/priyaA01/Cache-ual-Corner#readme"
+}
