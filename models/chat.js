@@ -1,17 +1,21 @@
-//datatypes needs change with field property
 
 module.exports = function(sequelize, DataTypes) {
   var Chat = sequelize.define("Chat", {
 
-    chat_session_id: {type: DataTypes.INTEGER},
-    userName: DataTypes.STRING,
-    messages: DataTypes.STRING,
-    chat_time:{ type:DataTypes.DATE, allowNull: false},
-    message_color: DataTypes.STRING
-
+    chat_messages: DataTypes.TEXT,
+    chat_time:{ type:DataTypes.DATE, defaultValue: sequelize.NOW},
+    
   });
+
+
+  Chat.associate = function(models) {
+    Chat.belongsTo(models.Login, {
+      foreignKey: {
+        allowNull: false
+      }
+    });
+  };
+
   return Chat;
 };
 
-//references: {model: 'Main',	key: 'id', deferrable: sequelize.Deferrable.INITIALLY_IMMEDIATE
-   	//}},

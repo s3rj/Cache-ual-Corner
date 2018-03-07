@@ -32,7 +32,7 @@ app.set("view engine", "handlebars");
 
 // Routes
 // =============================================================
-require("./migrations/api-routes.js")(app);
+require("./routes/api-routes.js")(app);
 
 // Starts the server to begin listening
 // =============================================================
